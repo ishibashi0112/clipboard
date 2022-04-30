@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Main from "src/components/Main";
-import SideBar from "src/components/SideBar";
+import { Main } from "src/components/Main";
 import Header from "src/components/Header";
 
 const Home = () => {
@@ -13,11 +12,8 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex">
-        <SideBar />
 
-        <Main />
-      </div>
+      <Main />
     </div>
   );
 };
